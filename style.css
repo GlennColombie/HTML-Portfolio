@@ -1,16 +1,20 @@
+html {
+  font-family: "Audiowide", cursive;
+}
+
 body {
-  background-color: lightgray;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0b2d72;
 }
 
 h1 {
-  color: black;
+  color: #0992c2;
   text-align: center;
   margin-top: 20px;
+  text-decoration: underline;
 }
 
 h2 {
-  color: brown;
+  color: #0ac4e0;
   text-align: center;
 }
 
@@ -21,12 +25,18 @@ h2 a::after {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: black;
+  background-color: #0ac4e0;
   transition: width 0.3s ease;
 }
 
 h2 a:hover::after {
   width: 100%;
+}
+
+h3 {
+  color: #0ac4e0;
+  text-align: center;
+  margin-top: 10px;
 }
 
 div#projects {
@@ -36,7 +46,7 @@ div#projects {
 }
 
 div#project {
-  background-color: white;
+  background-color: #f6e7bc;
   padding: 20px;
   border-radius: 10px;
 }
@@ -49,6 +59,12 @@ footer {
   gap: 20px;
 }
 
+footer a {
+  color: #0ac4e0;
+  text-decoration: none;
+  position: relative;
+}
+
 footer a::after {
   content: "";
   position: absolute;
@@ -56,7 +72,7 @@ footer a::after {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: black;
+  background-color: #0ac4e0;
   transition: width 0.3s ease;
 }
 
