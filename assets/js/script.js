@@ -224,8 +224,15 @@
       return;
     }
 
+    const action = form.getAttribute("action") || "";
+    if (action.includes("formsubmit.co")) {
+      const nextInput = form.querySelector("input[name='_next']");
+      if (nextInput && window.location.origin) {
+        nextInput.value = `${window.location.origin}/pages/thanks.html`;
+      }
+    }
+
     form.addEventListener("submit", (event) => {
-      const action = form.getAttribute("action") || "";
       if (!action.includes("your-form-id")) {
         return;
       }
